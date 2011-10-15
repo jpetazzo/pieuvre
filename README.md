@@ -3,35 +3,35 @@
 One Picture Is Worth One Thousand Words:
 
 
-     +----------+     +----------+	+----------+
-     |   HTTP   |     |   HTTP   |	|   HTTP   |
-     |  client  |     |  client  |	|  client  |
-     +----+-----+     +-----+----+	+----+-----+
-	  |		    |		     |
-	  |		    v		     |
-	  |		    |		     |
-	  +--------->-------+--------<-------+
-                       	    |
-                       	    v
-                       	    | HTTP proxy port
+     +----------+     +----------+      +----------+
+     |   HTTP   |     |   HTTP   |      |   HTTP   |
+     |  client  |     |  client  |      |  client  |
+     +----+-----+     +-----+----+      +----+-----+
+          |                 |                |
+          |                 v                |
+          |                 |                |
+          +--------->-------+--------<-------+
+                            |
+                            v
+                            | HTTP proxy port
                        +----+----+
                        | pieuvre |
                        | server  |
-		       +----+----+
-			    | Worker port
-			    ^
-			    |
-	    +---------+     |  	  +---------+
-	    | pieuvre +-->--+--<--+ pieuvre |
-	    | worker  |           | worker  |
-	    +--+---+--+   	  +------+--+
-	       |   |			 |
-	  +----+   +----+		 |
-	  |		|		 |
-     +----v---+	     +--v-----+	      +--v-----+
-     |  HTTP  |	     |  HTTP  |	      |  HTTP  |
-     | server |	     | server |	      | server |
-     +--------+	     +--------+	      +--------+
+                       +----+----+
+                            | Worker port
+                            ^
+                            |
+            +---------+     |     +---------+
+            | pieuvre +-->--+--<--+ pieuvre |
+            | worker  |           | worker  |
+            +--+---+--+           +------+--+
+               |   |                     |
+          +----+   +----+                |
+          |             |                |
+     +----v---+      +--v-----+       +--v-----+
+     |  HTTP  |      |  HTTP  |       |  HTTP  |
+     | server |      | server |       | server |
+     +--------+      +--------+       +--------+
 
 
 Pieuvre is made of two parts:
