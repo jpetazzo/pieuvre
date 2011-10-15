@@ -15,11 +15,11 @@ Pieuvre is made of two parts:
 
 Start the server:
 
-  node server.js
+    node server.js
 
 Start at least one worker:
 
-  node worker.js
+    node worker.js
 
 Configure your browser to use localhost:8081 as a proxy.
 
@@ -31,9 +31,9 @@ You can also go to http://localhost:8080/ to see an admin interface
 
 Like this:
 
-  git clone git://github.com/jpetazzo/pieuvre.git
-  git push pieuvre pieuvre
-  dotcloud info pieuvre.pieuvre
+    git clone git://github.com/jpetazzo/pieuvre.git
+    git push pieuvre pieuvre
+    dotcloud info pieuvre.pieuvre
 
 Your HTTP proxy is ready at the host:port shown in the "proxy" section.
 
