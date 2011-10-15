@@ -2,7 +2,7 @@
 
 One Picture Is Worth One Thousand Words!
 
-![Overview Schema (see overview.aa if you can't see this)](overview.png)
+![Overview Schema (see overview.aa if you can't see this)](https://github.com/jpetazzo/pieuvre/raw/master/overview.png)
 
 Pieuvre is made of two parts:
 
