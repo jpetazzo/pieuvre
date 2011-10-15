@@ -1,0 +1,14 @@
+pieuvre:
+  buildscript: builder
+  type: custom
+  ports:
+    www: http
+    proxy: tcp
+    worker: tcp
+  processes:
+    server: node server.js
+    worker1: node worker.js localhost $PORT_WORKER
+    worker2: node worker.js localhost $PORT_WORKER
+    worker3: node worker.js localhost $PORT_WORKER
+    worker4: node worker.js localhost $PORT_WORKER
+
